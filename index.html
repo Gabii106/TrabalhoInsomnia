@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Testador de Usuários</title>
+</head>
+<body>
+  <h1>Testador de API - Usuários</h1>
+  <button onclick="listarUsuarios()">Listar Usuários</button>
+  <ul id="lista"></ul>
+
+  <script>
+    async function listarUsuarios() {
+      const res = await fetch('http://localhost:3000/usuarios');
+      const data = await res.json();
+      document.getElementById('lista').innerHTML = '';
+      data.forEach(u => {
+        const li = document.createElement('li');
+        li.textContent = `ID: ${u.id} - Nome: ${u.nome}`;
+        document.getElementById('lista').appendChild(li);
+      });
+    }
+  </script>
+</body>
+</html>
