@@ -4,8 +4,9 @@
 2 - Baixe o repositório
 
 3 - Instale as dependências:
-    npm init -y
-    npm install express cors
+
+    - npm init -y
+    - npm install express cors
 
 4 - Rode o projeto:
     node server.js
