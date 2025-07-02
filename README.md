@@ -9,6 +9,7 @@
     - npm install express cors
 
 4 - Rode o projeto:
-    node server.js
+
+    - node server.js
 
 5 - Use o Insomnia para fazer as requisições.
